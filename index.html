@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="W1830127/style.css">
+    <title>Presentation page</title>
+</head>
+<body onload="slider()">
+    <div class="banner">
+        <div class="sider">
+            <img src="imag/img1.jpg" id="slideImg">
+
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h1>CK SPORTS</h1>
+                <h3>All the sport equepments in one place</h3>
+                <p> Student_1</p>
+			    <p> Lasith_W1830127</p>
+                <hr>
+			    <p> Student_2</p>
+			     <p> Rukshan_W1830189</p>
+                 <hr>
+                 <P>Student_3</P>
+                 <p>vihanga_W1850129</p>
+                 <hr>
+                 <p>Student_4</p>
+                 <p>Navidu_W185490</p>
+                
+			   
+                
+            
+        </div>
+    </div>
+    <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "img/img1.jpg",
+            "img/img2.jpg",
+            "img/img3.jpg",
+            "img/img4.jpg",
+    
+        );
+
+
+        var len = images.length;
+        var i=0;
+
+        function slider (){
+            if(i >len-1){
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',500)
+        }
+		setTimeout(function(){
+            window.location.href = 'main_page.html';
+         }, 4000);
+
+            
+
+        
+    </script>
+ 
+    
+</body>
+</html>
